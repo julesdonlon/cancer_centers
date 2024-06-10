@@ -132,7 +132,14 @@ cancerindex.html
               },
               'paint': {
                 'circle-radius': 5,
-                'circle-color': "blue",
+                'circle-color': [
+                  'match',
+                  ['get', 'resource'],
+                  'NCCN', 'blue',
+                  'BL', 'yellow',
+                  'CC', 'red', 
+                  'gray'
+                  ],
                 'circle-stroke-width': 1,
                 'circle-stroke-color': "black"
               }
