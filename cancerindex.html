@@ -147,13 +147,13 @@ cancerindex.html
               //set popup text
               //You can adjust the values of the popup to match the headers of your CSV.
               // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
-              var description = `<h3>` + e.features[0].properties.institution 
+              var description = `<h3>` + `<a href="` + e.features[0].properties.website + `" target="_blank">` + e.features[0].properties.institution + `</a>` +
                 + `</h3>` + `<h4>` + `<b>` + `Address: ` + `</b>` + e.features[0].properties.address 
                 + `<span class ="address-details">` + e.features[0].properties.city + `, ` + e.features[0].properties.state_abbrev + ` ` + e.features[0].properties.zip_code + `</span>`
                 + `</h4>` + `<h4>` + `<b>` + `Phone: ` + `</b>` + e.features[0].properties.phone 
                 + `</h4>` + `<h4>` + `<b>` + `Details: ` + `</b>` + e.features[0].properties.details 
                 + `</h4>` + `<h4>` + `<b>` + `Website: ` + `</b>`
-                + `<a href="` + e.features[0].properties.website + `" target="_blank">e.features[0]properties.institution</a>` + `</h4>`;
+                + `</h4>`;
 
               // Ensure that if the map is zoomed out such that multiple
               // copies of the feature are visible, the popup appears
