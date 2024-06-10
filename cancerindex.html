@@ -153,8 +153,14 @@ cancerindex.html
                 + `</h4>` + `<h4>` + `<b>` + `Phone: ` + `</b>` + e.features[0].properties.phone 
                 + `</h4>` + `<h4>` + `<b>` + `Details: ` + `</b>` + e.features[0].properties.details 
                 + `</h4>` + `<h4>` + `<b>` + `Website: ` + `</b>`
-                + `<a href="` + e.features[0].properties.website + `" target="_blank">` + e.features[0].properties.webtext + `</a>` + `</h4>`;
+                + `<a href="` + e.features[0].properties.website + `" target="_blank" class="popup-link">` + e.features[0].properties.webtext + `</a>` + `</h4>`;
 
+              .popup-link {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                white-space: normal;
+              }
+              
               // Ensure that if the map is zoomed out such that multiple
               // copies of the feature are visible, the popup appears
               // over the copy being pointed to.
