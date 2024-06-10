@@ -148,8 +148,8 @@ cancerindex.html
               //You can adjust the values of the popup to match the headers of your CSV.
               // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
               var description = `<h3>` + e.features[0].properties.institution
-                + `</h3>` + `<h4>` + `<b>` + `Address: ` + `</b>` + e.features[0].properties.address 
-                + `<span class ="address-details">` + e.features[0].properties.city + `, ` + e.features[0].properties.state_abbrev + ` ` + e.features[0].properties.zip_code + `</span>`
+                + `</h3>` + `<h4>` + `<div>` + `<b>` + `Address: ` + `</b>` + e.features[0].properties.address + `<br>`
+                + `<div>` + e.features[0].properties.city + `, ` + e.features[0].properties.state_abbrev + ` ` + e.features[0].properties.zip_code + `<br>`
                 + `</h4>` + `<h4>` + `<b>` + `Phone: ` + `</b>` + e.features[0].properties.phone 
                 + `</h4>` + `<h4>` + `<b>` + `Details: ` + `</b>` + e.features[0].properties.details 
                 + `</h4>` + `<h4>` + `<b>` + `Website: ` + `</b>`
